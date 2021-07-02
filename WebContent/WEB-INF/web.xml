@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+		 version="3.1">
+		 
+		 <servlet>
+		 	<servlet-name>login</servlet-name>
+		 	<servlet-class>com.student.servlet.LoginServlet</servlet-class>
+		 </servlet>
+		 
+		 <servlet-mapping>
+		 	<servlet-name>login</servlet-name>
+		 	<url-pattern>/log</url-pattern>
+		 </servlet-mapping>
+		 
+		 
+		 
+		 <servlet>
+		 	<servlet-name>CreateWebinar</servlet-name>
+		 	<servlet-class>com.webinar.servlet.WebinarInsert</servlet-class>
+		 </servlet>
+		 
+		 <servlet-mapping>
+		 	<servlet-name>CreateWebinar</servlet-name>
+		 	<url-pattern>/insert</url-pattern>
+		 </servlet-mapping>
+		 
+		 
+		 
+		 <servlet>
+		 	<servlet-name>Register</servlet-name>
+		 	<servlet-class>com.student.servlet.RegisterServlet</servlet-class>
+		 </servlet>
+		 
+		<servlet-mapping>
+			<servlet-name>Register</servlet-name>
+			<url-pattern>/register</url-pattern>
+		</servlet-mapping>
+		
+		
+		
+		<servlet>
+			<servlet-name>updateWebinar2</servlet-name>
+			<servlet-class>com.webinar.servlet.updateWebinarServlet</servlet-class>
+		</servlet>
+		
+		<servlet-mapping>
+			<servlet-name>updateWebinar2</servlet-name>
+			<url-pattern>/updateWeb</url-pattern>
+		</servlet-mapping>
+		
+		
+		
+		<servlet>
+			<servlet-name>updatePassword</servlet-name>
+			<servlet-class>com.student.servlet.ForgotPasswordServlet</servlet-class>
+		</servlet>
+		
+		<servlet-mapping>
+			<servlet-name>updatePassword</servlet-name>
+			<url-pattern>/updatePass</url-pattern>
+		</servlet-mapping>
+		
+		
+		
+		<servlet>
+			<servlet-name>DeleteWebinar</servlet-name>
+			<servlet-class>com.webinar.servlet.DeleteWebinarServlet</servlet-class>
+		</servlet>
+		
+		<servlet-mapping>
+			<servlet-name>DeleteWebinar</servlet-name>
+			<url-pattern>/deleteWeb</url-pattern>
+		</servlet-mapping>
+		
+		
+		
+		<servlet>
+		 	<servlet-name>UpdateStudentDetails</servlet-name>
+		 	<servlet-class>com.student.servlet.UpdateStudentDetailsServlet</servlet-class>
+		 </servlet>
+		 
+		 <servlet-mapping>
+		 	<servlet-name>UpdateStudentDetails</servlet-name>
+		 	<url-pattern>/update</url-pattern>
+		 </servlet-mapping>
+		 
+		 
+		 
+		 <servlet>
+		 	<servlet-name>DeleteStudentDetails</servlet-name>
+		 	<servlet-class>com.student.servlet.DeleteStudentAccountServlet</servlet-class>
+		 </servlet>
+		 
+		 <servlet-mapping>
+		 	<servlet-name>DeleteStudentDetails</servlet-name>
+		 	<url-pattern>/delete</url-pattern>
+		 </servlet-mapping>
+		 
+</web-app> 
